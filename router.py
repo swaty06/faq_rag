@@ -1,11 +1,12 @@
 from semantic_router import Route, RouteLayer
-#from semantic_router.layer import RouteLayer
 from semantic_router.encoders import HuggingFaceEncoder
 
+# Initialize encoder
 encoder = HuggingFaceEncoder(
     name="sentence-transformers/all-MiniLM-L6-v2"
 )
 
+# Define FAQ route
 faq = Route(
     name='faq',
     utterances=[
@@ -17,17 +18,28 @@ faq = Route(
     ]
 )
 
+# Define SQL route
 sql = Route(
     name='sql',
     utterances=[
-        
         "Are there any books on sale?",
-        "What is the price ofThen She Was Gone: A Novel	?",
+        "What is the price of Then She Was Gone: A Novel?",  # Fixed typo
+        "Show me products under 1000",
+        "Which items are discounted?",
     ]
 )
 
+# Create router
 router = RouteLayer(routes=[faq, sql], encoder=encoder)
 
 if __name__ == "__main__":
-    print(router("What is your policy on defective product?").name)
-    print(router("Pink Puma shoes in price range 5000 to 1000").name)
+    # Test queries
+    query1 = "What is your policy on defective product?"
+    result1 = router(query1)
+    print(f"Query: {query1}")
+    print(f"Route: {result1.name}\n")
+    
+    query2 = "Pink Puma shoes in price range 5000 to 1000"
+    result2 = router(query2)
+    print(f"Query: {query2}")
+    print(f"Route: {result2.name}")
