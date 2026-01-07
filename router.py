@@ -14,16 +14,17 @@ faq = Route(
     utterances=[
         "What is your return policy?",
         "Can I return a product?",
-        "How do returns work?",
-        "Do you offer refunds?",
+        "Is this book in stock?",
+        "Do you offer discounts on bulk purchases?",
         "Are there any ongoing sales or promotions?",
-        "Do you have any discounts right now?",
+        "Do you sell used or second-hand books?",
         "Is there a sale going on?",
         "What are your shipping options?",
-        "How long does delivery take?",
-        "How can I check my order status?",
-        "Where is my order?",
-        "How do I contact customer support?",
+        "Do you ship internationally?",
+        "Can I read reviews before buying?",
+        "Can I track my order?",
+        "Do you offer gift cards?",
+        "I can't find a book I'm looking for",
         
         
     ]
