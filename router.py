@@ -12,11 +12,10 @@ encoder = HuggingFaceEncoder(
 faq = Route(
     name='faq',
     utterances=[
-        "What is the return policy of the products?",
-        "Do I get discount with the HDFC credit card?",
-        "How can I track my order?",
-        "What payment methods are accepted?",
-        "How long does it take to process a refund?",
+        "What is your return policy?",
+        "Are there any ongoing sales or promotions?",
+        
+        
     ]
 )
 
@@ -26,8 +25,7 @@ sql = Route(
     utterances=[
         "Are there any books on sale?",
         "What is the price of Then She Was Gone: A Novel?",  # Fixed typo
-        "Show me products under 1000",
-        "Which items are discounted?",
+       
     ]
 )
 
