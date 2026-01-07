@@ -3,7 +3,7 @@ pandas
 pandasql
 python-dotenv
 groq
-semantic-router[local]
+semantic-router>=0.0.20
 chromadb
 sentence_transformers
 protobuf==3.20.3
