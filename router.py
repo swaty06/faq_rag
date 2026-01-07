@@ -1,5 +1,7 @@
-from semantic_router import Route, RouteLayer
+from semantic_router import Route
 from semantic_router.encoders import HuggingFaceEncoder
+from semantic_router.routers import SemanticRouter
+
 
 # Initialize encoder
 encoder = HuggingFaceEncoder(
@@ -30,7 +32,7 @@ sql = Route(
 )
 
 # Create router
-router = RouteLayer(routes=[faq, sql], encoder=encoder)
+router = SemanticRouter(encoder=encoder,routes=[sql,faq],auto_sync="local" )
 
 if __name__ == "__main__":
     # Test queries
