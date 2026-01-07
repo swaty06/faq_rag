@@ -13,7 +13,17 @@ faq = Route(
     name='faq',
     utterances=[
         "What is your return policy?",
+        "Can I return a product?",
+        "How do returns work?",
+        "Do you offer refunds?",
         "Are there any ongoing sales or promotions?",
+        "Do you have any discounts right now?",
+        "Is there a sale going on?",
+        "What are your shipping options?",
+        "How long does delivery take?",
+        "How can I check my order status?",
+        "Where is my order?",
+        "How do I contact customer support?",
         
         
     ]
@@ -23,8 +33,15 @@ faq = Route(
 sql = Route(
     name='sql',
     utterances=[
-        "Are there any books on sale?",
-        "What is the price of Then She Was Gone: A Novel?",  # Fixed typo
+         "Are there any books on sale?",
+        "Which books are discounted?",
+        "What is the price of Then She Was Gone: A Novel?",
+        "How much does Then She Was Gone cost?",
+        "Is this book available?",
+        "List all available books",
+        "Show me books under 20 euros",
+        "Which books are written by this author?",
+        "How many books are in the catalog?",
        
     ]
 )
