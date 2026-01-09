@@ -1,4 +1,4 @@
-# # 📚 Bookstore Chatbot with Semantic Routing
+ # 📚 Bookstore Chatbot with Semantic Routing
 
 An intelligent chatbot for book-related queries that uses semantic routing to intelligently direct questions to either FAQ retrieval or SQL database queries. Built with semantic router technology and RAG (Retrieval-Augmented Generation) functionality.
 
